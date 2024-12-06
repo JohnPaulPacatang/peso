@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mx-auto px-6 lg:px-48">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h2 className="text-green text-xl font-bold">PESO Manpower Inc</h2>
+            <h2 className="text-blue text-xl font-bold">PESO Manpower Inc</h2>
             <p className="text-gray-600 mt-4">
               Developing a Responsive Website for Public Employment Service Office.
             </p>
@@ -73,9 +73,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-grow p-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green"
+                className="flex-grow p-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue"
               />
-              <button className="bg-green text-white px-4 py-2 rounded-r-md hover:bg-green">
+              <button className="bg-blue text-white px-4 py-2 rounded-r-md hover:bg-darkblue">
                 Subscribe
               </button>
             </div>

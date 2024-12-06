@@ -29,7 +29,7 @@ function AppContent() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-us" element={<AboutUs />} />
-                {/* <Route path="/announcement" element={<Joblist />} /> */}
+                {/* <Route path="/announcement" element={<Jobs />} /> */}
                 <Route path="/job-listing" element={<Joblist />} />
                 <Route path="/contact-us" element={<Contactus />} />
                 <Route path="/login" element={<Login />} />

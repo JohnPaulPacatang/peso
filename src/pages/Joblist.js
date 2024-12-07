@@ -328,98 +328,98 @@ const Joblist = () => {
             </div>
           ))}
 
-{modalOpen && (
-  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-auto">
-    <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-4xl transform transition-transform duration-300 ease-in-out hover:scale-105">
-      <div className="flex justify-between items-center border-b border-gray-200 pb-4 mb-4">
-        <h2 className="text-3xl font-semibold text-gray-800">{selectedJob?.jobTitle}</h2>
-        <button
-          className="text-gray-500 hover:text-red-600 transition duration-200 transform scale-110"
-          onClick={handleCloseModal}
-        >
-          ✖
-        </button>
-      </div>
-      <div className="flex items-center space-x-4 mb-4">
-        
-        <div className="flex-1">
-          <p className="text-gray-600">
-            <strong>Company:</strong> {selectedJob?.companyName}
-          </p>
-          <p className="text-gray-600">
-            <strong>Location:</strong> {selectedJob?.location}
-          </p>
-          <p className="text-gray-600">
-            <strong>Category:</strong> {selectedJob?.category}
-          </p>
-          <p className="text-gray-600">
-            <strong>Job Type:</strong> {selectedJob?.jobType}
-          </p>
-          <p className="text-gray-600">
-            <strong>Salary:</strong> {selectedJob?.salary}
-          </p>
-          <p className="text-gray-600">
-            <strong>Deadline:</strong> {selectedJob?.deadline}
-          </p>
-        </div>
-        <img
-          src={selectedJob?.companyLogo}
-          alt={`${selectedJob?.companyName} logo`}
-          className="h-28"
-        />
-      </div>
-      <div className="mt-4">
-        <p className="text-gray-600">
-          <strong>Description:</strong> {selectedJob?.description}
-        </p>
-      </div>
-      <div className="mt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
-            />
-          </div>
-        </div>
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-          <textarea
-            placeholder="Your Message"
-            className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
-          ></textarea>
-        </div>
-        <label className="block mb-2 text-sm font-medium text-gray-700">Upload your CV/Resume (PDF)</label>
-        <input
-          type="file"
-          accept=".pdf"
-          className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
-        />
-      </div>
-      <div className="flex justify-between items-center mt-6">
-        <button
-          className="py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-150"
-          onClick={handleCloseModal}
-        >
-          Cancel
-        </button>
-        <button className="py-2 px-4 bg-blue text-white rounded-lg hover:bg-darkblue transition duration-150">
-          Submit Application
-        </button>
-      </div>
-    </div>
-  </div>
-)}
+          {modalOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-auto">
+              <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-4xl ">
+                <div className="flex justify-between items-center border-b border-gray-200 pb-4 mb-4">
+                  <h2 className="text-3xl font-semibold text-gray-800">{selectedJob?.jobTitle}</h2>
+                  <button
+                    className="text-gray-500 hover:text-red-600 transition duration-200 transform scale-110"
+                    onClick={handleCloseModal}
+                  >
+                    ✖
+                  </button>
+                </div>
+                <div className="flex items-center space-x-4 mb-4">
+
+                  <div className="flex-1">
+                    <p className="text-gray-600">
+                      <strong>Company:</strong> {selectedJob?.companyName}
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Location:</strong> {selectedJob?.location}
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Category:</strong> {selectedJob?.category}
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Job Type:</strong> {selectedJob?.jobType}
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Salary:</strong> {selectedJob?.salary}
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Deadline:</strong> {selectedJob?.deadline}
+                    </p>
+                  </div>
+                  <img
+                    src={selectedJob?.companyLogo}
+                    alt={`${selectedJob?.companyName} logo`}
+                    className="h-28"
+                  />
+                </div>
+                <div className="mt-4">
+                  <p className="text-gray-600">
+                    <strong>Description:</strong> {selectedJob?.description}
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                      />
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea
+                      placeholder="Your Message"
+                      className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                    ></textarea>
+                  </div>
+                  <label className="block mb-2 text-sm font-medium text-gray-700">Upload your CV/Resume (PDF)</label>
+                  <input
+                    type="file"
+                    accept=".pdf"
+                    className="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                  />
+                </div>
+                <div className="flex justify-between items-center mt-6">
+                  <button
+                    className="py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-150"
+                    onClick={handleCloseModal}
+                  >
+                    Cancel
+                  </button>
+                  <button className="py-2 px-4 bg-blue text-white rounded-lg hover:bg-darkblue transition duration-150">
+                    Submit Application
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
 
 
         </div>

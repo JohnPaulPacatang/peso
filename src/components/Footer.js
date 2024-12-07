@@ -76,7 +76,7 @@ const Footer = () => {
                 className="flex-grow p-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue"
               />
               <button className="bg-blue text-white px-4 py-2 rounded-r-md hover:bg-darkblue">
-                Subscribe
+                Send
               </button>
             </div>
           </div>

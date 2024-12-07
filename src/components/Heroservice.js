@@ -6,7 +6,7 @@ import service4 from '../assets/service4.png'
 
 const Heroservice = () => {
     return (
-        <div className='py-32 lg:px-48 px-8'>
+        <div className='py-24 lg:px-48 px-8'>
             <h1 className='text-center text-4xl text-darkblue font-extrabold'>PESO Services</h1>
             <p className='text-center mx-auto py-4 text-lg w-9/12 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deleniti modi non autem dolorem culpa quibusdam necessitatibus reprehenderit, praesentium harum est reiciendis alias deserunt ex veritatis vitae quam? Maiores, eaque.</p>
 

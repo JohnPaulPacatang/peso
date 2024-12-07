@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import pesoLogo from "../assets/peso-logo.png";
+import mainLogo from "../assets/mainLogo.png";
 import { CgProfile } from "react-icons/cg";
 import { RiMenu3Line, RiCloseLine, RiArrowDropDownLine } from "react-icons/ri";
 import { FaUserEdit } from "react-icons/fa";
@@ -60,10 +60,9 @@ const Navbar = () => {
                     : "bg-transparent py-3"
                     }`}
             >
-                <img className="w-16 h-16 rounded-full" src={pesoLogo} alt="logo" />
-
-                <h1 className="font-bold text-xl pl-2">PESO</h1>
-
+                <img className="w-auto h-16 p-2" src={mainLogo} alt="logo" />
+               
+               
                 {/* Hamburger Menu Button for mobile */}
                 <button
                     className="lg:hidden text-3xl text-black"

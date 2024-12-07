@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Contactus from "./pages/Contactus";
 import Home from "./pages/Home";
 import AboutUs from "./pages/Aboutus";
+import Announcement from "./pages/Announcement";
 import Joblist from "./pages/Joblist";
 import Login from "./components/Login";
 import ScrollToTop from "./components/ScrollToTop";
@@ -29,7 +30,7 @@ function AppContent() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-us" element={<AboutUs />} />
-                {/* <Route path="/announcement" element={<Jobs />} /> */}
+                <Route path="/announcement" element={<Announcement />} />
                 <Route path="/job-listing" element={<Joblist />} />
                 <Route path="/contact-us" element={<Contactus />} />
                 <Route path="/login" element={<Login />} />

@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "D:/PESO/peso-system/src/assets/svgexport-173.png";
-import Logo1 from "D:/PESO/peso-system/src/assets/svgexport-293.png";
-import Logo2 from "D:/PESO/peso-system/src/assets/svgexport-218.png";
-import Logo3 from "D:/PESO/peso-system/src/assets/svgexport-257.png";
-import Logo4 from "D:/PESO/peso-system/src/assets/svgexport-233.png";
-import Logo5 from "D:/PESO/peso-system/src/assets/svgexport-299.png";
+import Logo from "../assets/svgexport-173.png";
+import Logo1 from "../assets/svgexport-293.png";
+import Logo2 from "../assets/svgexport-218.png";
+import Logo3 from "../assets/svgexport-257.png";
+import Logo4 from "../assets/svgexport-233.png";
+import Logo5 from "../assets/svgexport-299.png";
 
 function LogoCarousel() {
   const logos = [

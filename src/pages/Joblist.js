@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-// import pesoLogo from "../assets/peso-logo.png";
+import React, { useState, useEffect } from "react";
 import logo1 from "../assets/svgexport-38.png";
 import joblistBanner from "../assets/joblist.jpg";
+import { auth } from "../firebase"; 
+import { toast } from "react-toastify";
 
 const Joblist = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,6 +11,14 @@ const Joblist = () => {
   const [selectedMonth, setSelectedMonth] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+  const [user, setUser] = useState(null); 
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
 
   const jobs = [
     {
@@ -131,7 +140,7 @@ const Joblist = () => {
       salary: "22000-30000",
       deadline: "28th Oct, 2023",
       description: "As a Graphic Designer, you will create visual concepts and designs for marketing materials, websites, and branding. Your work will involve using design software to produce high-quality graphics that align with company goals."
-    }
+    },
   ];
 
   const handleJobTypeChange = (type) => {
@@ -161,6 +170,13 @@ const Joblist = () => {
   const filteredJobs = applyFilters();
 
   const handleApplyNow = (job) => {
+    if (!user) {
+      toast.warning("Please log in to apply for this job!", {
+        position: "top-center",
+        autoClose: 2000,
+      });
+      return;
+    }
     setSelectedJob(job);
     setModalOpen(true);
   };
@@ -317,9 +333,13 @@ const Joblist = () => {
               </div>
 
               <div className="flex flex-col items-start lg:items-end space-y-2 mt-4 lg:mt-0">
-                <button className="bg-blue text-white px-4 py-2 rounded-lg hover:bg-darkblue" onClick={() => handleApplyNow(job)}>
+                <button
+                  className="px-4 py-2 rounded-lg bg-blue text-white hover:bg-darkblue"
+                  onClick={() => handleApplyNow(job)}
+                >
                   Apply Now
                 </button>
+
                 <p className="text-gray-500">
                   Deadline:{" "}
                   <span className="font-bold">{job.deadline}</span>

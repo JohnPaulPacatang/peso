@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import heroImage from '../assets/jobfair3.jpg';
@@ -25,11 +24,6 @@ const Hero = () => {
                 <p className="p-8 text-xl text-blue">
                     Your dream job is waiting for you - let’s make it happen!
                 </p>
-                <Link to="/login">
-                    <button className="bg-blue text-white text-lg px-6 py-2 rounded-lg shadow-md hover:bg-darkblue hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
-                        Log in →
-                    </button>
-                </Link>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 lg:px-48 px-8 pt-20">

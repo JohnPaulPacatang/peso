@@ -1,5 +1,5 @@
 import React from 'react';
-import pesoLogo from '../assets/peso-about.png';
+import pesoLogo from '../assets/about-6.png';
 
 const VisionMission = () => {
     return (

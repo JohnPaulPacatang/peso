@@ -70,7 +70,7 @@ const Contactus = () => {
                                 <MdKeyboardArrowDown className={`transform text-2xl transition-transform duration-300 ${openIndex === 1 ? 'rotate-180' : ''}`} />
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${openIndex === 1 ? 'max-h-40' : 'max-h-0'}`}>
-                                <p className="text-gray-600 mt-2 text-lg px-4 text-base">
+                                <p className="text-gray-600 mt-2 text-lg px-4">
                                     After logging in, search for a job that matches your skills and interests. Click on the job listing to view details, and then click "Apply Now." Upload your resume and any additional required documents to complete your application.
                                 </p>
                             </div>

@@ -69,16 +69,6 @@ const Footer = () => {
             <p className="text-gray-600 mt-4">
               Contact us for more information about available job opportunities and application details.
             </p>
-            <div className="mt-4 flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-grow p-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue"
-              />
-              <button className="bg-blue text-white px-4 py-2 rounded-r-md hover:bg-darkblue">
-                Send
-              </button>
-            </div>
           </div>
         </div>
         <div className="mt-10 text-center text-gray-600 text-sm">
